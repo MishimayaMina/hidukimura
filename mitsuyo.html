@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黒部満夜について - 日月村</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #000000;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* --- 赤：固定ヘッダー --- */
+    header {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 32px;
+      background: #FF6666;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      z-index: 1000;
+      text-align: center;
+      padding: 0 8px;
+      line-height: 1.2;
+      overflow-wrap: break-word;
+    }
+
+    /* --- ロゴあるとこ --- */
+    .top-bar {
+      position: fixed;
+      top: 32px;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: #000000;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+    }
+
+    /* 中央コンテナ */
+    .top-inner {
+      width: 800px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+
+    .logo-area img {
+      height: 80px;
+      cursor: pointer;
+    }
+
+    /* 検索ボックス　右上固定 */
+    .search-box {
+      position: fixed;
+      top: 42px;
+      right: 20px;
+      display: flex;
+      gap: 6px;
+      z-index: 1002;
+    }
+
+    #searchInput {
+      background: #FFF;
+      color: #555555;
+      border: 1px solid #333333;
+      padding: 4px 6px;
+      border-radius: 4px;
+    }
+
+    #searchButton {
+      background: #333333;
+      color: white;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #searchInput::placeholder {
+      color: #aaaaaa;
+    }
+
+    /* --- メニュー --- */
+    .menu-bar {
+      position: fixed;
+      top: 112px;
+      left: 0;
+      width: 100%;
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      z-index: 998;
+    }
+
+    .menu-inner {
+      width: 800px;
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+    }
+
+.menu-item {
+  background: #333333;
+  color: white;
+  padding: 10px 0;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+  width: 120px;
+  text-align: center;
+  display: inline-block;
+}
+
+
+    /* --- 本文 --- */
+    main {
+      flex: 1;
+      margin-top: 160px;
+      padding: 20px 0;
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+footer {
+  background: #333333;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-inner {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  height: 60px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: right;
+  flex: 1;
+}
+
+.fiction-note {
+  width: 100%;
+  margin-top: 16px;
+  font-size: 12px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    本Webサイトはフィクションであり、実在する人物・団体・自治体との一切の関係はございません。
+  </header>
+
+  <div class="top-bar">
+    <div class="top-inner">
+      <div class="logo-area">
+        <a href="index.html">
+          <img src="images/hidukimura_wh.png" alt="日月村">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="キーワードを入力">
+    <button id="searchButton">検索</button>
+  </div>
+
+  <div class="menu-bar">
+    <div class="menu-inner">
+      <a href="about.html" class="menu-item">日月村について</a>
+      <a href="culture.html" class="menu-item">日月村の文化</a>
+      <a href="life.html" class="menu-item">日月村の暮らし</a>
+      <a href="news.html" class="menu-item">お知らせ</a>
+      <a href="access.html" class="menu-item">アクセス</a>
+      <a href="hint.html" class="menu-item">ヒント</a>
+    </div>
+  </div>
+
+  <main>
+    <p><h3>黒部満夜について</h3></p>
+<p>
+<img src="images/mitsuyo_face.png" alt="白塚真昼の顔写真">
+</p>
+<p>
+名前：黒部満夜（くろべみつよ）<br>
+生年月日：2011年6月9日<br>
+身長：164cm<br>
+<br>
+日月教第八二三号魔法少女<br>
+</p>
+<p>
+日月教の神職である黒部家の娘。跡取りとして弟がいることと後述の理由により、魔法少女に選定。<br>
+大人びた雰囲気ながら、中身は抜けていて不器用な面が目立つ。神職の娘であるため教会や魔法少女の仕事は真っ当にこなせているが、学業の成績は得意と苦手の差が非常に激しい。魔法少女という役目上、普段の授業のみならず補習であっても抜け出さなくてはならない時があるため、そういった面での支援を欠かさず行うこと。<br>
+特筆すべき点として、魔法少女適性が非常に高い白塚真昼と非常に仲が良い。さらに満夜が真昼の存在に精神的に依存しているため、真昼だけを魔法少女にした場合に満夜が何をしでかすか分からないこと、及び真昼が魔法少女として活動する理由に満夜は利用できるため、魔法少女に選定することとした。
+</p>
+<p>
+神職の家系であるため、家族に関する記載は省略。
+</p>
+<p>
+補記1：先述の白塚真昼を第八二四号魔法少女として魔法少女に選出した。<br>
+万一真昼が満夜の前から姿を消すことがあれば何をしでかすか分からない。可能な限り真昼が先に神の侍女に召し上げられることのないよう、十分に配慮すること。
+</p>
+<p>
+補記2：2026年4月1日より魔法少女としての活動を停止し、神の侍女に召し上げられるまで教会で保護することとする。<br>
+真昼には「魔法を用いた活動の反動による一時的な体調不良」として説明している。真昼が優秀であることは当然として満夜も魔法少女適性は十分であり、急ぎ神の侍女として捧げる必要はない。双方の状況を見つつ、必要と判断したタイミングで神の侍女に捧げること。自然と神の侍女に召し上げられるのであれば、それが一番良い。
+</p>
+  </main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="images/hidukimura_wh.png" alt="日月村">
+    </div>
+
+    <div class="footer-text">
+      <strong>日月村役場</strong><br>
+      〒53-2795　山上県日月村美空19番地<br>
+      TEL：024-38-1111<br>
+      FAX：024-38-1811<br>
+      Mail：info@繝｡繝ｼ繝ｫ.譌･譛域搗<br>
+      ©かにけん　　Lv3（30/44）
+    </div>
+
+    <div class="fiction-note">
+      本Webサイトはフィクションであり、実在する人物・団体・自治体との一切の関係はございません。
+    </div>
+  </div>
+</footer>
+
+
+  <script src="js/search.js"></script>
+</body>
+</html>

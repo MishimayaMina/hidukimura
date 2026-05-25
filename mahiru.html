@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>白塚真昼について - 日月村</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #000000;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* --- 赤：固定ヘッダー --- */
+    header {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 32px;
+      background: #FF6666;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      z-index: 1000;
+      text-align: center;
+      padding: 0 8px;
+      line-height: 1.2;
+      overflow-wrap: break-word;
+    }
+
+    /* --- ロゴあるとこ --- */
+    .top-bar {
+      position: fixed;
+      top: 32px;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: #000000;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+    }
+
+    /* 中央コンテナ */
+    .top-inner {
+      width: 800px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+
+    .logo-area img {
+      height: 80px;
+      cursor: pointer;
+    }
+
+    /* 検索ボックス　右上固定 */
+    .search-box {
+      position: fixed;
+      top: 42px;
+      right: 20px;
+      display: flex;
+      gap: 6px;
+      z-index: 1002;
+    }
+
+    #searchInput {
+      background: #FFF;
+      color: #555555;
+      border: 1px solid #333333;
+      padding: 4px 6px;
+      border-radius: 4px;
+    }
+
+    #searchButton {
+      background: #333333;
+      color: white;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #searchInput::placeholder {
+      color: #aaaaaa;
+    }
+
+    /* --- メニュー --- */
+    .menu-bar {
+      position: fixed;
+      top: 112px;
+      left: 0;
+      width: 100%;
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      z-index: 998;
+    }
+
+    .menu-inner {
+      width: 800px;
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+    }
+
+.menu-item {
+  background: #333333;
+  color: white;
+  padding: 10px 0;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+  width: 120px;
+  text-align: center;
+  display: inline-block;
+}
+
+
+    /* --- 本文 --- */
+    main {
+      flex: 1;
+      margin-top: 160px;
+      padding: 20px 0;
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+footer {
+  background: #333333;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-inner {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  height: 60px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: right;
+  flex: 1;
+}
+
+.fiction-note {
+  width: 100%;
+  margin-top: 16px;
+  font-size: 12px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    本Webサイトはフィクションであり、実在する人物・団体・自治体との一切の関係はございません。
+  </header>
+
+  <div class="top-bar">
+    <div class="top-inner">
+      <div class="logo-area">
+        <a href="index.html">
+          <img src="images/hidukimura_wh.png" alt="日月村">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="キーワードを入力">
+    <button id="searchButton">検索</button>
+  </div>
+
+  <div class="menu-bar">
+    <div class="menu-inner">
+      <a href="about.html" class="menu-item">日月村について</a>
+      <a href="culture.html" class="menu-item">日月村の文化</a>
+      <a href="life.html" class="menu-item">日月村の暮らし</a>
+      <a href="news.html" class="menu-item">お知らせ</a>
+      <a href="access.html" class="menu-item">アクセス</a>
+      <a href="hint.html" class="menu-item">ヒント</a>
+    </div>
+  </div>
+
+  <main>
+    <p><h3>白塚真昼について</h3></p>
+<p>
+<img src="images/mahiru_face.png" alt="白塚真昼の顔写真">
+</p>
+<p>
+名前：白塚真昼（しらつかまひる）<br>
+生年月日：2011年5月3日<br>
+身長：152cm<br>
+<br>
+日月教第八二四号魔法少女<br>
+</p>
+<p>
+白塚家の娘。きょうだいはおらず、一人っ子。<br>
+典型的な優等生という印象の少女。学業の成績もよく、普段の立ち振る舞いも基本的にはしっかりした典型的ないい子のもの。ただし稀に妙な行動を取ることがある。周囲の人間の知らない論理で動いているのかもしれない。<br>
+日月教の活動にも元々真面目であり、さらに魔法少女への憧れもあるようで、魔法少女候補として都合が良く、さらに極めて魔法少女への適性が高いため選定。<br>
+懸念点として、柔軟な思考の持ち主であるため魔法少女に秘匿すべき事項に触れてしまう可能性がある。他の魔法少女以上に、彼女の前での情報の取り扱いには注意すること。
+</p>
+<p>
+父親：白塚真人（しらつかまさと）<br>
+旧姓：赤崎（あかさき）<br>
+職業：IT系（単身赴任中）<br>
+村の外部から婿入りしてきた人物。実家である赤崎家は水口市から他県へ引っ越しており、現在真昼の父方の祖父母にあたる人物はいずれも逝去しているため父方の親戚とは疎遠。<br>
+現在単身赴任中であり、日月村には不在。現状、特段警戒すべき要素はなし。
+</p>
+<p>
+母親：白塚春美（しらつかはるみ）<br>
+職業：専業主婦<br>
+白塚家の一人娘であった女性。元々白塚家は米農家をしていたが、彼女があまり身体が丈夫ではないこと、夫の真人が単身赴任していることにより農作業をする人手がないため、水田は現在分割して村内の他の農家へ貸し出している。<br>
+村に生まれた人間として、日月教へ身を捧げる敬虔な女性。信頼できる人物。
+</p>
+<p>
+補記1：最近授業中の居眠りが多いと学校の教師から報告を受けた。おそらく魔法少女の役目による疲れが出ているものと思われる。このまま積極的に魔法少女活動へリソースを割き、他のことに割くリソースを削るよう、気づかれない程度に思考を誘導すること。
+</p>
+  </main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="images/hidukimura_wh.png" alt="日月村">
+    </div>
+
+    <div class="footer-text">
+      <strong>日月村役場</strong><br>
+      〒53-2795　山上県日月村美空19番地<br>
+      TEL：024-38-1111<br>
+      FAX：024-38-1811<br>
+      Mail：info@繝｡繝ｼ繝ｫ.譌･譛域搗<br>
+      ©かにけん　　Lv3（29/44）
+    </div>
+
+    <div class="fiction-note">
+      本Webサイトはフィクションであり、実在する人物・団体・自治体との一切の関係はございません。
+    </div>
+  </div>
+</footer>
+
+
+  <script src="js/search.js"></script>
+</body>
+</html>
