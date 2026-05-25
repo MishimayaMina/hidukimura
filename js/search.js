@@ -1,20 +1,29 @@
-let routes = {};
-const notFoundPage = "notfound.html";
 
-fetch("routes/routes.json")
-  .then(res => res.json())
-  .then(data => {
-    routes = data;
+document.addEventListener("DOMContentLoaded", () => {
+  let routes = {};
+  const notFoundPage = "notfound.html";
 
-    // fetch 完了後にイベント登録
-    document.getElementById("searchButton").addEventListener("click", () => {
-      const input = document.getElementById("searchInput").value.trim();
-
-      if (routes[input]) {
-        window.location.href = routes[input];
-      } else {
-        window.location.href = `notfound.html?word=${encodeURIComponent(input)}`;
+  fetch("routes/routes.json")
+    .then(res => {
+      if (!res.ok) {
+        throw new Error("routes.json が読み込めませんでした");
       }
+      return res.json();
+    })
+    .then(data => {
+      routes = data;
+
+      document.getElementById("searchButton").addEventListener("click", () => {
+        const input = document.getElementById("searchInput").value.trim();
+
+        if (routes[input]) {
+          window.location.href = routes[input];
+        } else {
+          window.location.href = `notfound.html?word=${encodeURIComponent(input)}`;
+        }
+      });
+    })
+    .catch(err => {
+      console.error("検索ルート読み込みエラー:", err);
     });
-  })
-  .catch(err => console.error("routes.json 読み込みエラー:", err));
+});
